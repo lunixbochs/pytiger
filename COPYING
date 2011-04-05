@@ -1,0 +1,71 @@
+pytiger.c, setup.py, and tiger/__init__.py are written by Mark Lee.
+
+Copyright 2006 Mark Lee
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+----
+
+sboxes.c, tiger.c, testtiger.c, and makefile come from 
+<http://www.cs.technion.ac.il/~biham/Reports/Tiger/>.
+Copyright notice on above web page:
+
+Tiger has no usage restrictions nor patents. It can be used freely, with the
+reference implementation, with other implementations or with a modification to
+the reference implementation (as long as it still implements Tiger). We only ask
+you to let us know about your implementation and to cite the origin of Tiger and
+of the reference implementation.
+
+----
+
+tiger.h, tigertree.h, and tigertree.c originally come from Bitcollider 0.6.0:
+http://sourceforge.net/projects/bitcollider/
+
+      (PD) 2004 The Bitzi Corporation
+
+1. This work and others bearing the above label were
+created by, or on behalf of, the Bitzi Corporation.
+
+2. The Bitzi Corporation places these works into the
+public domain, disclaiming all rights granted us by
+copyright law.
+
+You are completely free to copy, use, redistribute
+and modify this work, though you should be aware of
+points (3) and (4), below.
+
+3. The Bitzi Corporation reserves all rights with
+regard to any of its trademarks which may appear
+herein, such as "Bitzi" or "Bitcollider". Please take
+care that your uses of this work do not infringe on
+our trademarks or imply our endorsement, for example
+be sure to change labels and identifying strings in
+your derivative works.
+
+4. THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS''
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Please see http://bitzi.com/publicdomain or write
+info@bitzi.com for more info.
