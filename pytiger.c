@@ -59,9 +59,7 @@ static PyObject *tiger_hash(PyObject *self, PyObject *args)
         result[i] = endianFlip(result[i]);
     }
 
-    char buffer[49];
-    sprintf(buffer, "%.16llx%.16llx%.16llx", result[0], result[1], result[2]);
-    return Py_BuildValue("s#", buffer, 48);
+    return Py_BuildValue("s#", (char*)result, 24);
 }
 
 static PyObject *tiger_treehash(PyObject *self, PyObject *args)
