@@ -54,13 +54,13 @@ static PyObject *tiger_hash(PyObject *self, PyObject *args)
     }
     tiger((word64*)str, strlen(str), result);
 
-    char buffer[49];
     int i;
     for (i=0; i<3; i++) {
         result[i] = endianFlip(result[i]);
     }
 
-    sprintf(buffer, "%llx%llx%llx", result[0], result[1], result[2]);
+    char buffer[49];
+    sprintf(buffer, "%.16llx%.16llx%.16llx", result[0], result[1], result[2]);
     return Py_BuildValue("s#", buffer, 48);
 }
 
