@@ -19,19 +19,6 @@ limitations under the License.
 #include <stdint.h>
 #include "tigertree.h"
 
-word64 endianFlip(word64 val)
-{
-   return 
-   ((val &   UINT64_C(0x00000000000000FF)) << 56) |
-   ((val &   UINT64_C(0x000000000000FF00)) << 40) |
-   ((val &   UINT64_C(0x0000000000FF0000)) << 24) |
-   ((val &   UINT64_C(0x00000000FF000000)) << 8)  |
-   ((val &   UINT64_C(0x000000FF00000000)) >> 8)  | 
-   ((val &   UINT64_C(0x0000FF0000000000)) >> 24) |
-   ((val &   UINT64_C(0x00FF000000000000)) >> 40) |
-   ((val &   UINT64_C(0xFF00000000000000)) >> 56);
-}
-
 static PyObject *tiger_hash(PyObject*, PyObject*);
 static PyObject *tiger_treehash(PyObject*, PyObject*);
 static PyMethodDef tiger_methods[3] = {
@@ -53,11 +40,6 @@ static PyObject *tiger_hash(PyObject *self, PyObject *args)
         return NULL;
     }
     tiger((word64*)str, strlen(str), result);
-
-    int i;
-    for (i=0; i<3; i++) {
-        result[i] = endianFlip(result[i]);
-    }
 
     return Py_BuildValue("s#", (char*)result, 24);
 }
