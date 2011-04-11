@@ -94,5 +94,5 @@ static PyObject *tiger_treehash(PyObject *self, PyObject *args)
     tt_digest(&tt_ctx, result);
 
     /* For some reason the last character is always 0x01, which is not part of the hash */
-    return Py_BuildValue("s#", (char*)result, strlen((char*)result) - 1);
+    return Py_BuildValue("s#", (char*)result, 24);
 }
